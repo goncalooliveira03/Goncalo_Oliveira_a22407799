@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "ginásio",
     "receita",
     "loja",
-    "aplicao_do_quizz",
+    "portfolio",
     ]
 
 MIDDLEWARE = [
@@ -121,3 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = "static/"
+
+
+import os
+
+# Pasta onde as imagens/ficheiros carregados ficam guardados
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# URL para aceder a esses ficheiros
+MEDIA_URL = '/media/'
