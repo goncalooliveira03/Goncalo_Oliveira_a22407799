@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    Licenciatura, UnidadeCurricular, Tecnologia,
+    Licenciatura, Docente, UnidadeCurricular, Tecnologia,
     Projeto, TFC, Competencia, Formacao, MakingOf
 )
 
@@ -11,11 +11,18 @@ class LicenciaturaAdmin(admin.ModelAdmin):
     search_fields = ['nome', 'sigla', 'instituicao']
 
 
+@admin.register(Docente)
+class DocenteAdmin(admin.ModelAdmin):
+    list_display = ['nome', 'email', 'departamento', 'especialidade']
+    search_fields = ['nome', 'email', 'departamento']
+
+
 @admin.register(UnidadeCurricular)
 class UnidadeCurricularAdmin(admin.ModelAdmin):
-    list_display = ['nome', 'ano', 'semestre', 'ects', 'docente']
+    list_display = ['nome', 'ano', 'semestre', 'ects']
     list_filter = ['ano', 'semestre']
-    search_fields = ['nome', 'docente']
+    search_fields = ['nome']
+    filter_horizontal = ['docentes']
 
 
 @admin.register(Tecnologia)
@@ -35,9 +42,9 @@ class ProjetoAdmin(admin.ModelAdmin):
 
 @admin.register(TFC)
 class TFCAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'autor', 'ano', 'destaque']
-    list_filter = ['ano', 'destaque']
-    search_fields = ['titulo', 'autor', 'orientador']
+    list_display = ['titulo', 'autor', 'ano', 'orientador', 'destaque']
+    list_filter = ['ano', 'destaque', 'orientador']
+    search_fields = ['titulo', 'autor']
 
 
 @admin.register(Competencia)
@@ -52,6 +59,7 @@ class FormacaoAdmin(admin.ModelAdmin):
     list_display = ['nome', 'instituicao', 'ano']
     list_filter = ['ano']
     search_fields = ['nome', 'instituicao']
+    filter_horizontal = ['competencias']
 
 
 @admin.register(MakingOf)
