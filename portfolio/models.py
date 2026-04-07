@@ -70,7 +70,10 @@ class Projeto(models.Model):
     imagem = models.ImageField(upload_to='projetos/', blank=True, null=True)
     video_url = models.URLField(blank=True)
     repositorio_github = models.URLField(blank=True)
+    link_deploy = models.URLField(blank=True)
     conceitos_aplicados = models.TextField(blank=True)
+    competencias_adquiridas = models.TextField(blank=True)
+    colaboradores = models.CharField(max_length=300, blank=True)
     unidade_curricular = models.ForeignKey(
         UnidadeCurricular, on_delete=models.SET_NULL,
         null=True, blank=True, related_name='projetos'
