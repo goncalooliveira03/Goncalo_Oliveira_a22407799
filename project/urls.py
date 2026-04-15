@@ -22,8 +22,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # inclui as URLs da app portfolio
     path('portfolio/', include('portfolio.urls')),
+    path("curso/", include("curso.urls")),
+    path("", include("curso.urls")),
 ]
 
 if settings.DEBUG:

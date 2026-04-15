@@ -1,0 +1,26 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Making Of</h2>
+<section>
+    {% for item in makingofs %}
+    <article>
+        <header>
+            <h3>{{ item.titulo }}</h3>
+            <p>{{ item.data }}</p>
+        </header>
+        <section>
+            <p>{{ item.descricao }}</p>
+            {% if item.decisoes_tomadas %}
+                <h4>Decisões Tomadas</h4>
+                <p>{{ item.decisoes_tomadas }}</p>
+            {% endif %}
+            {% if item.uso_ia %}
+                <h4>Uso de IA</h4>
+                <p>{{ item.uso_ia }}</p>
+            {% endif %}
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Formações</h2>
+<section>
+    {% for formacao in formacoes %}
+    <article>
+        <header>
+            <h3>{{ formacao.nome }}</h3>
+            <p>{{ formacao.instituicao }} — {{ formacao.ano }}</p>
+        </header>
+        <section>
+            <h4>Competências</h4>
+            <ul>
+                {% for comp in formacao.competencias.all %}
+                    <li>{{ comp.nome }}</li>
+                {% empty %}
+                    <li>Sem competências associadas</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

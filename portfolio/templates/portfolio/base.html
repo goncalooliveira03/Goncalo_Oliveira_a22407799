@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'escola/styles.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1>Portfolio — Gonçalo Oliveira</h1>
+        <nav>
+            <a href="{% url 'portfolio:projetos' %}">Projetos</a>
+            <a href="{% url 'portfolio:ucs' %}">Unidades Curriculares</a>
+            <a href="{% url 'portfolio:tecnologias' %}">Tecnologias</a>
+            <a href="{% url 'portfolio:competencias' %}">Competências</a>
+            <a href="{% url 'portfolio:docentes' %}">Docentes</a>
+            <a href="{% url 'portfolio:licenciaturas' %}">Licenciatura</a>
+            <a href="{% url 'portfolio:formacoes' %}">Formações</a>
+            <a href="{% url 'portfolio:tfcs' %}">TFCs</a>
+            <a href="{% url 'portfolio:makingof' %}">Making Of</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gonçalo Oliveira</p>
+    </footer>
+</body>
+</html>
