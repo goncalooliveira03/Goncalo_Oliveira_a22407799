@@ -1,0 +1,10 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Apagar "{{ objeto }}"?</h2>
+<p>Tens a certeza que queres apagar este elemento? Esta ação não pode ser desfeita.</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sim, apagar</button>
+    <a href="javascript:history.back()">Cancelar</a>
+</form>
+{% endblock %}

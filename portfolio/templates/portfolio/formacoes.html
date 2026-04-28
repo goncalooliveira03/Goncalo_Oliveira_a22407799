@@ -2,6 +2,7 @@
 
 {% block content %}
 <h2>Formações</h2>
+<a href="{% url 'portfolio:formacao_criar' %}">➕ Nova Formação</a>
 <section>
     {% for formacao in formacoes %}
     <article>
@@ -10,6 +11,7 @@
             <p>{{ formacao.instituicao }} — {{ formacao.ano }}</p>
         </header>
         <section>
+            <p>{{ formacao.descricao }}</p>
             <h4>Competências</h4>
             <ul>
                 {% for comp in formacao.competencias.all %}
@@ -19,6 +21,10 @@
                 {% endfor %}
             </ul>
         </section>
+        <footer>
+            <a href="{% url 'portfolio:formacao_editar' formacao.pk %}">✏️ Editar</a>
+            <a href="{% url 'portfolio:formacao_apagar' formacao.pk %}">🗑️ Apagar</a>
+        </footer>
     </article>
     {% endfor %}
 </section>

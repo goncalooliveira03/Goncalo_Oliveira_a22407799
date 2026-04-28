@@ -1,24 +1,29 @@
 {% extends "portfolio/base.html" %}
 
 {% block content %}
-<h2>Licenciatura</h2>
+<h2>Competências</h2>
+<a href="{% url 'portfolio:competencia_criar' %}">➕ Nova Competência</a>
 <section>
-    {% for lic in licenciaturas %}
+    {% for comp in competencias %}
     <article>
         <header>
-            <h3>{{ lic.nome }}</h3>
-            <p>{{ lic.sigla }} — {{ lic.instituicao }} — desde {{ lic.ano_inicio }}</p>
+            <h3>{{ comp.nome }}</h3>
         </header>
         <section>
-            <h4>Unidades Curriculares</h4>
+            <p>{{ comp.descricao }}</p>
+            <h4>Tecnologias</h4>
             <ul>
-                {% for uc in lic.ucs.all %}
-                    <li>{{ uc.nome }}</li>
+                {% for tec in comp.tecnologias.all %}
+                    <li>{{ tec.nome }}</li>
                 {% empty %}
-                    <li>Sem UCs associadas</li>
+                    <li>Sem tecnologias associadas</li>
                 {% endfor %}
             </ul>
         </section>
+        <footer>
+            <a href="{% url 'portfolio:competencia_editar' comp.pk %}">✏️ Editar</a>
+            <a href="{% url 'portfolio:competencia_apagar' comp.pk %}">🗑️ Apagar</a>
+        </footer>
     </article>
     {% endfor %}
 </section>

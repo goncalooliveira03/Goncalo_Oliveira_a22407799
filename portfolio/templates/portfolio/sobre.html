@@ -1,0 +1,78 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Sobre esta Aplicação</h2>
+
+<section>
+    <h3>1. Arquitetura MVT do Django</h3>
+    <article>
+        <p>A aplicação segue a arquitetura MVT (Model-View-Template) do Django:</p>
+        <ul>
+            <li><strong>Model</strong> — define a estrutura dos dados e comunica com a base de dados.</li>
+            <li><strong>View</strong> — processa os pedidos do utilizador, interage com os models e devolve uma resposta.</li>
+            <li><strong>Template</strong> — apresenta os dados em HTML que é enviado para o browser.</li>
+        </ul>
+        <p><em>(Fotografia do desenho em papel a inserir aqui)</em></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+    </article>
+</section>
+
+<section>
+    <h3>2. Modelação</h3>
+    <article>
+        <p><em>(Fotografia do diagrama entidade-relação a inserir aqui)</em></p>
+        <p>As principais classes da aplicação são: Projeto, Tecnologia, Competencia, Formacao, UnidadeCurricular, Licenciatura, Docente, TFC e MakingOf.</p>
+    </article>
+</section>
+
+<section>
+    <h3>3. Tecnologias</h3>
+    {% for tec in tecnologias %}
+    <article>
+        <header>
+            <h4>{{ tec.nome }}</h4>
+            <p>{{ tec.categoria }} — {{ tec.get_nivel_display }}</p>
+        </header>
+        <section>
+            <p>{{ tec.descricao }}</p>
+        </section>
+    </article>
+    {% empty %}
+        <p>Sem tecnologias registadas.</p>
+    {% endfor %}
+</section>
+
+<section>
+    <h3>4. Estrutura das Páginas</h3>
+    <article>
+        <p><em>(Fotografia do mapa de navegação a inserir aqui)</em></p>
+        <p>A aplicação tem as seguintes páginas: Projetos, Tecnologias, Competências, Formações, Unidades Curriculares, Docentes, Licenciatura, TFCs, Making Of e Sobre.</p>
+    </article>
+</section>
+
+<section>
+    <h3>5. Repositório GitHub</h3>
+    <article>
+        <p><a href="https://github.com/goncalooliveira03/Goncalo_Oliveira_a22407799">Ver repositório no GitHub</a></p>
+        <p>O GitHub foi usado para guardar e versionar o código ao longo do desenvolvimento. Permite acompanhar o histórico de alterações, voltar a versões anteriores e ter o código sempre disponível.</p>
+    </article>
+</section>
+
+<section>
+    <h3>6. Making Of</h3>
+    {% for item in makingofs %}
+    <article>
+        <header>
+            <h4>{{ item.titulo }}</h4>
+            <p>{{ item.data }}</p>
+        </header>
+        <section>
+            <p>{{ item.descricao }}</p>
+        </section>
+    </article>
+    {% empty %}
+        <p>Sem entradas no making of.</p>
+    {% endfor %}
+</section>
+
+{% endblock %}

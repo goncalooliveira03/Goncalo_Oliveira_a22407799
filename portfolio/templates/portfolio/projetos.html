@@ -2,6 +2,7 @@
 
 {% block content %}
 <h2>Projetos</h2>
+<a href="{% url 'portfolio:projeto_criar' %}">➕ Novo Projeto</a>
 <section>
     {% for projeto in projetos %}
     <article>
@@ -23,6 +24,10 @@
                 {% endfor %}
             </ul>
         </section>
+        <footer>
+            <a href="{% url 'portfolio:projeto_editar' projeto.pk %}">✏️ Editar</a>
+            <a href="{% url 'portfolio:projeto_apagar' projeto.pk %}">🗑️ Apagar</a>
+        </footer>
     </article>
     {% endfor %}
 </section>
