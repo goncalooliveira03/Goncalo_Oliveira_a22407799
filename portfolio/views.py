@@ -136,7 +136,6 @@ def formacao_apagar(request, pk):
     return render(request, 'portfolio/confirmar_apagar.html', {'objeto': formacao})
 
 def sobre_view(request):
-    from .models import TipoTecnologia
-    tipos = TipoTecnologia.objects.prefetch_related('tecnologias').all()
+    tecnologias = Tecnologia.objects.all()
     makingofs = MakingOf.objects.all()
-    return render(request, 'portfolio/sobre.html', {'tipos': tipos, 'makingofs': makingofs})
+    return render(request, 'portfolio/sobre.html', {'tecnologias': tecnologias, 'makingofs': makingofs})
