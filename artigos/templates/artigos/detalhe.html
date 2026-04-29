@@ -1,0 +1,53 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<div style="max-width:800px; margin:30px auto; padding:0 20px;">
+
+    {% if artigo.fotografia %}
+        <img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}" style="width:100%; max-height:400px; object-fit:cover;">
+    {% endif %}
+
+    <h2>{{ artigo.titulo }}</h2>
+    <p>por <strong>{{ artigo.autor.username }}</strong> · {{ artigo.data_criacao|date:"d/m/Y" }}</p>
+
+    {% if artigo.link_externo %}
+        <p><a href="{{ artigo.link_externo }}" target="_blank">🔗 {{ artigo.link_externo }}</a></p>
+    {% endif %}
+
+    <div>{{ artigo.texto|linebreaks }}</div>
+
+    {% if request.user == artigo.autor %}
+        <a href="{% url 'artigos:editar' artigo.pk %}">✏️ Editar</a>
+        <a href="{% url 'artigos:apagar' artigo.pk %}">🗑️ Apagar</a>
+    {% endif %}
+
+    <p>
+        <a href="{% url 'artigos:like' artigo.pk %}">
+            ❤️ {% if ja_gostou %}Já gostei{% else %}Gosto{% endif %}
+        </a>
+        {{ artigo.total_likes }} gosto(s)
+    </p>
+
+    <h3>Comentários</h3>
+    {% for comentario in artigo.comentarios.all %}
+        <div>
+            <strong>{{ comentario.autor.username }}</strong> · {{ comentario.data_criacao|date:"d/m/Y H:i" }}
+            <p>{{ comentario.texto }}</p>
+        </div>
+    {% empty %}
+        <p>Ainda não há comentários.</p>
+    {% endfor %}
+
+    {% if request.user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form_comentario.as_p }}
+            <button type="submit">Comentar</button>
+        </form>
+    {% else %}
+        <p><a href="{% url 'accounts:login' %}">Faz login</a> para comentar.</p>
+    {% endif %}
+
+    <p><a href="{% url 'artigos:lista' %}">← Voltar</a></p>
+</div>
+{% endblock %}

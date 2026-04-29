@@ -1,0 +1,12 @@
+from django.urls import path
+from . import views
+
+app_name = 'accounts'
+
+urlpatterns = [
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('registo/', views.registo_view, name='registo'),
+    path('magic/<str:token>/', views.magic_link_verify, name='magic_verify'),
+    path('perfil/', views.perfil_view, name='perfil'),
+]

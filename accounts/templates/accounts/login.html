@@ -1,0 +1,38 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<div class="auth-container">
+    <h2>Entrar</h2>
+
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-{{ msg.tags }}">{{ msg }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <section class="auth-section">
+        <h3>🔐 Login com senha</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form_login.as_p }}
+            <button type="submit" name="login_senha" class="btn btn-primary">Entrar</button>
+        </form>
+    </section>
+
+    <div class="auth-divider"><span>ou</span></div>
+
+    <section class="auth-section">
+        <h3>✉️ Entrar com link mágico</h3>
+        <p class="auth-hint">Insere o teu email e receberás um link de acesso sem password.</p>
+        <form method="post">
+            {% csrf_token %}
+            {{ form_magic.as_p }}
+            <button type="submit" name="magic_link" class="btn btn-secondary">Enviar link mágico</button>
+        </form>
+    </section>
+
+    <div class="auth-footer">
+        <p>Ainda não tens conta? <a href="{% url 'accounts:registo' %}">Registar</a></p>
+    </div>
+</div>
+{% endblock %}
