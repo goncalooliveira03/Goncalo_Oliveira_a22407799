@@ -26,7 +26,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path("artigos/", include("artigos.urls")),
     path("curso/", include("curso.urls")),
-    path("", include("curso.urls")),
+    path("", include("portfolio.urls")),
 ]
 
 if settings.DEBUG:
