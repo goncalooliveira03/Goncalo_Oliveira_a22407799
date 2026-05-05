@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "loja",
     "portfolio",
     "curso",
+    "accounts",
+    "artigos",
     ]
 
 MIDDLEWARE = [
@@ -68,6 +70,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "accounts.context_processors.user_groups",
             ],
         },
     },
@@ -90,20 +93,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
-]
+AUTH_PASSWORD_VALIDATORS = []
 
 
 # Internationalization
@@ -131,3 +121,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # URL para aceder a esses ficheiros
 MEDIA_URL = '/media/'
+
+LOGIN_URL = '/accounts/login/'  # URL para redirecionar usuários não autenticados

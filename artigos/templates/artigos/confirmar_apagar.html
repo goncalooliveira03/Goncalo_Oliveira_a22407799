@@ -1,0 +1,13 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<div style="max-width:500px; margin:60px auto;">
+    <h2>Apagar artigo</h2>
+    <p>Tens a certeza que queres apagar <strong>"{{ artigo.titulo }}"</strong>?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Sim, apagar</button>
+        <a href="{% url 'artigos:detalhe' artigo.pk %}">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

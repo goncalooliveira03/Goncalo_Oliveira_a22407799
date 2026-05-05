@@ -10,6 +10,16 @@
 
 </head>
 <body>
+    <div style="background:#1a1a2e; color:#eee; padding:6px 20px; text-align:right;">
+    {% if request.user.is_authenticated %}
+        {{ request.user.username }} |
+        <a href="{% url 'accounts:perfil' %}" style="color:#90caf9;">Perfil</a> |
+        <a href="{% url 'accounts:logout' %}" style="color:#90caf9;">Sair</a>
+    {% else %}
+        <a href="{% url 'accounts:login' %}" style="color:#90caf9;">Entrar</a> |
+        <a href="{% url 'accounts:registo' %}" style="color:#90caf9;">Registar</a>
+    {% endif %}
+</div>
     <header>
         <h1>Portfolio — Gonçalo Oliveira</h1>
         <nav>
@@ -23,6 +33,7 @@
             <a href="{% url 'portfolio:tfcs' %}">TFCs</a>
             <a href="{% url 'portfolio:makingof' %}">Making Of</a>
             <a href="{% url 'portfolio:sobre' %}">Sobre a Aplicação</a>
+            <a href="{% url 'artigos:lista' %}">Artigos</a>
         </nav>
     </header>
 

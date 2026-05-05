@@ -2,7 +2,9 @@
 
 {% block content %}
 <h2>Tecnologias</h2>
-<a href="{% url 'portfolio:tecnologia_criar' %}">➕ Nova Tecnologia</a>
+        {% if is_gestor_portfolio %}
+            <a href="{% url 'portfolio:tecnologia_criar' %}">➕ Nova Tecnologia</a>
+        {% endif %}
 <section>
     {% for tec in tecnologias %}
     <article>
@@ -14,8 +16,10 @@
             <p>{{ tec.descricao }}</p>
         </section>
         <footer>
-            <a href="{% url 'portfolio:tecnologia_editar' tec.pk %}">✏️ Editar</a>
-            <a href="{% url 'portfolio:tecnologia_apagar' tec.pk %}">🗑️ Apagar</a>
+            {% if is_gestor_portfolio %}
+                <a href="{% url 'portfolio:tecnologia_editar' tec.pk %}">✏️ Editar</a>
+                <a href="{% url 'portfolio:tecnologia_apagar' tec.pk %}">🗑️ Apagar</a>
+            {% endif %}
         </footer>
     </article>
     {% endfor %}

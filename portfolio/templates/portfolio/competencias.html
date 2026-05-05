@@ -2,7 +2,9 @@
 
 {% block content %}
 <h2>Competências</h2>
-<a href="{% url 'portfolio:competencia_criar' %}">➕ Nova Competência</a>
+        {% if is_gestor_portfolio %}
+            <a href="{% url 'portfolio:competencia_criar' %}">➕ Nova Competência</a>
+        {% endif %}
 <section>
     {% for comp in competencias %}
     <article>
@@ -21,8 +23,10 @@
             </ul>
         </section>
         <footer>
-            <a href="{% url 'portfolio:competencia_editar' comp.pk %}">✏️ Editar</a>
-            <a href="{% url 'portfolio:competencia_apagar' comp.pk %}">🗑️ Apagar</a>
+            {% if is_gestor_portfolio %}
+                <a href="{% url 'portfolio:competencia_editar' comp.pk %}">✏️ Editar</a>
+                <a href="{% url 'portfolio:competencia_apagar' comp.pk %}">🗑️ Apagar</a>
+            {% endif %}
         </footer>
     </article>
     {% endfor %}
