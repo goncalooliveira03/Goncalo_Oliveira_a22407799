@@ -1,0 +1,628 @@
+[
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 1,
+    "fields": {
+      "nome": "Licenciatura em Engenharia Informática",
+      "sigla": "LEI",
+      "instituicao": "Universidade Lusófona",
+      "ano_inicio": 2022,
+      "descricao": "Licenciatura em Engenharia Informática na Universidade Lusófona de Lisboa.",
+      "link": "https://informatica.ulusofona.pt/ensino/licenciaturas/engenharia-informatica/",
+      "logo": ""
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 32,
+    "fields": {
+      "nome": "Fundamentos de Física",
+      "sigla": "ULHT260-7336",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "Compreensão do movimento dos corpos, ou seja, cinemática. Compreender as forças que atuam sobre os corpos e resolver as equações do movimento, ou seja, a dinâmica. Compreender o trabalho e a energia. Entendendo o campo elétrico e o potencial elétrico, ou seja, eletrostática. Compreender as correntes elétricas e resolver circuitos com correntes elétricas contínuas\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 33,
+    "fields": {
+      "nome": "Fundamentos de Programação",
+      "sigla": "ULHT260-7337",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "O objectivo desta unidade curricular é fornecer aos futuros profissionais na área da informática as bases para que possam iniciar (de um modo disciplinado) a actividade de programação.\n\nO aluno começa por desenvolver a capacidade de raciocínio algorítmico recorrendo a fluxogramas.\n\nO aluno deverá ser capaz de traduzir esses fluxogramas numa linguagem de programação imperativa. Concretamente, o aluno deverá conhecer a sintaxe básica de Kotlin que lhe permitam criar programas simples de linha de c",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 34,
+    "fields": {
+      "nome": "Matemática I",
+      "sigla": "ULHT260-1",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "Esta disciplina confere a(o) aluna(o) conhecimentos que lhe permitam utilizar, de forma criativa, autónoma, e em contextos diversificados:\n\nOA1: a linguagem simbólica matemática e o raciocínio matemático;\n\nOA2: os conceitos e resultados fundamentais do cálculo diferencial, de modo a que possa proceder ao estudo de uma função real de variável real;\n\nOA3: os métodos de primitivação:\n\nOA4: as noções fundamentais do cálculo integral, de modo a que possa calcular integrais simples e determinar áreas ",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 35,
+    "fields": {
+      "nome": "Matemática Discreta",
+      "sigla": "ULHT260-1656",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "Os objetivos principais desta disciplina são:\n\nOA1. Aplicar propriedades elementares das operações lógicas e de quantificação;\n\nOA2. Construir e analisar argumentos matemáticos;\n\nOA3. Explicar os conceitos básicos sobre conjuntos e funções e realizar operações elementares sobre estes objetos matemáticos;\n\nOA4. Entender a teoria dos números;\n\nOA5. Construir e compreender autómatos finitos e máquinas de Turing;\n\nOA6. Contribuir para a aquisição de um conjunto de competências: capacidade de assimil",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 36,
+    "fields": {
+      "nome": "Sistemas Digitais",
+      "sigla": "ULHT260-7",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "Esta UC tem como principal objetivo apresentar aos alunos as ferramentas necessárias para a introdução ao funcionamento de máquinas. Um dos objetivos principais é a apresentar aos alunos novas bases numéricas, uma vez que estas constituem o principal alicerce de sistemas digitais. \n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 37,
+    "fields": {
+      "nome": "Álgebra Linear",
+      "sigla": "ULHT260-2091",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "No final desta unidade curricular, os estudantes devem saber:\n\nOA1. Dominar os conceitos e as operações elementares sobre matrizes;\n\nOA2. Discutir e resolver sistemas de equações lineares e utilizar o método de eliminação de Gauss;\n\nOA3. Formular e resolver problemas do mundo real usando sistemas de equações lineares;\n\nOA4. Reconhecer os conceitos de espaço vetorial e transformação linear e utilizá-los na resolução de problemas destes domínios;\n\nOA5. Calcular determinantes e compreender a sua ut",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 38,
+    "fields": {
+      "nome": "Algoritmia e Estruturas de Dados",
+      "sigla": "ULHT260-13397",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais de algoritmos e das estruturas de dados básicas, numa perspetiva de resolver problemas complexos de uma forma eficiente. O aluno deverá ser capaz de analisar e avaliar a eficiência de um algoritmo sem necessidade de o implementar ou testar. Deverá ser igualmente capaz de aplicar a estrutura de dados mais eficaz e eficiente para resolver um determinado problema.\n\nConcretamente, o aluno deverá conseguir criar programas em ",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 39,
+    "fields": {
+      "nome": "Arquitetura de Computadores",
+      "sigla": "ULHT260-5857",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "Entender o funcionamento dos computadores, com o foco na interação dos programas com o hardware. Reconhecimento das potencialidades e limitações de um computador. Entendimento da forma como interagem os diversos elementos da estrutura/arquitetura de um computador.\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 40,
+    "fields": {
+      "nome": "Competências Comportamentais",
+      "sigla": "ULHT260-17267",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 4,
+      "descricao": "Pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 41,
+    "fields": {
+      "nome": "Linguagens de Programação I",
+      "sigla": "ULHT260-498",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "No final desta Unidade Curricular, os alunos deverão ser capazes de criar programas C eficientes e rápidos, tendo em consideração o uso correto da memória. Deverão adquirir uma compreensão sólida da abstração procedural e ser capazes de analisar e criar algoritmos simples usando essa abordagem. Além disso, os alunos devem entender os princípios por trás dos sistemas \"coletores de lixo\" em linguagens de alto nível, e da operação de bibliotecas de estruturas de dados. O curso visa fornecer aos alu",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 42,
+    "fields": {
+      "nome": "Matemática II",
+      "sigla": "ULHT260-505",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "Conferir competências nas técnicas e aplicações do cálculo diferencial e integral com funções de várias variáveis. Dominar os conceitos de limite, continuidade e diferenciabilidade de funções. Dominar o cálculo de integrais múltiplos.\n\nTer capacidade de resolver problemas em contextos diversificados usando os métodos do cálculo diferencial e integral. Conhecer as aplicações a problemas de otimização, de caracterização geométrica de curvas e superfícies e de cálculo de volumes e áreas.\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 43,
+    "fields": {
+      "nome": "Arquiteturas Avançadas de Computadores",
+      "sigla": "ULHT260-13398",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 5,
+      "descricao": "Os estudantes devem conhecer os componentes de um computador moderno e compreender o seu funcionamento e as suas interações. Devem ser capazes de identificar o fluxo de dados e analizar o desempenho de um computador.\n\nEsta competência é diretamente aplicável nos domínios do hardware e da administração de sistemas, e indiretamente aplicável no domínio do software - permitindo formar futuros engenheiros informáticos que tomem decisões de análise, desenho e implementação de software que tirem parti",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 44,
+    "fields": {
+      "nome": "Bases de Dados",
+      "sigla": "ULHT260-1792",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "São objetivos dotar os estudantes dos conhecimentos teóricos e práticos necessários à concepção, construção e análise de bases de dados relacionais: nomeadamente obter as seguintes aptidões e\n\ncompetências:\n\n1. Compreender as razões de implementação de bases de dados relacionais no mundo empresarial\n\n2. Transpor de uma análise de requisitos para um modelo entidade-associação para desenhar bases de dados;\n\n3. Aplicar os conceitos do modelo relacional de bases de dados, transformando o modelo enti",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 45,
+    "fields": {
+      "nome": "Desenvolvimento de Interfaces Web",
+      "sigla": "ULHT260-26141",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 3,
+      "descricao": "\n\t\n\tCompreender o funcionamento da Internet e da Web e o seu impacto no desenvolvimento de aplicações.\n\t\n\t\n\tAplicar princípios de programação Web e padrões de arquitetura usando HTML, CSS, JavaScript, React e Next.js.\n\t\n\t\n\tCriar interfaces interativas, responsivas e escaláveis para aplicações front-end.\n\t\n\t\n\tIntegrar APIs e utilizar ferramentas como Git, GitHub, Codespaces, GitHub Pages e Vercel no ciclo de desenvolvimento.\n\t\n\t\n\tAvaliar e selecionar abordagens de design e arquitetura adequadas a",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 46,
+    "fields": {
+      "nome": "Linguagens de Programação II",
+      "sigla": "ULHT260-898",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "Esta UC tem como objetivo apresentar uma visão multi-paradigma da programação. São analisados e comparados os 3 paradigmas mais populares: imperativo, orientado a objectos e funcional. Os alunos revêm conceitos da programação imperativa e adquirem conceitos fundamentais da programação orientada a objetos (herança, encapsulamento, polimorfismo, etc.) e da programação funcional (lambdas, funções de 1a ordem, etc.) de forma a que consigam aplicá-los em projetos de desenvolvimento de software comple",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 47,
+    "fields": {
+      "nome": "Processamento de Imagem",
+      "sigla": "ULHT260-19082",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 4,
+      "descricao": "- Conhecer e compreender os funcionamentos base dos Large Language Models, as suas características, limitações, e afins\n\n- Code reading: leitura e interpretação de programas de forma sistemática\n\n- Debugging: recorrendo ao debugger do IntelliJ\n\n- Unit Testing: recorrendo ao JUnit\n\n- Exploração e documentação de de código existente usando LLMs\n\n- Pensamento crítico e pensamento céptico\n\n- Code Review: análise crítica de código\n\n- Técnicas de \"Prompt engineering\"\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 48,
+    "fields": {
+      "nome": "Sistemas Operativos",
+      "sigla": "ULHT260-6305",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 6,
+      "descricao": "OA1. Conhecimento teórico de como funciona um sistema operativo\n\nOA2. Capacidade prática para desenvolver programas que usem de forma eficiente os recursos do sistema operativo, incluindo concorrência e sincronização\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 49,
+    "fields": {
+      "nome": "Engenharia de Requisitos e Testes",
+      "sigla": "ULHT260-22512",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "\n\tEntender o que é Gestão de Sistemas de Informação\n\tPor que é fundamental definir requisitos\n\tSaber desenvolver e gerenciar uma metodologia de definição e estrutura de requisitos\n\tComo alinhar os testes com os requisitos\n\tCompreender a importância de modelar os requisitos e testes\n\tFundamentos de Gestão de Projetos\n\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 50,
+    "fields": {
+      "nome": "Probabilidades e Estatística",
+      "sigla": "ULHT260-620",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "Esta disciplina permite que o(a) aluno(a)\n\nOA1: seja exposto à probabilidade como uma função de medida essencial à ciência.\n\nOA2: entenda a estatística como uma área da ciência que permite à engenharia recolher dados, analisar dados, formular hipóteses relativas a esses dados e testar essas hipóteses.\n\nOA3: utilize a linguagem de programação R para obter resultados estatísticos e probabilísticos em dados reais.\n\nNessa medida, a estatística e a probabilidade são essenciais ao conhecimento e à eng",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 51,
+    "fields": {
+      "nome": "Programação Web",
+      "sigla": "ULHT260-11195",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "\n\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tEntender o funcionamento da Internet e da Web.\n\t\t\t\tCompreender os princípios da programação Web e seus principais padrões de desenho.\n\t\t\t\tAplicar estes conceitos, usando várias tecnologias (HTML, CSS, JavaScript, Python and Django¿).\n\t\t\t\tArquitetar aplicações eficientes, de fácil manutenção, que corram na Web.\n\t\t\t\tAvaliar as diferentes estratégias de desenho, sabendo escolher a abordagem que mais se adequa ao contexto.\n\t\t\t\tSer capaz de construir e implantar na cloud aplicações ",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 52,
+    "fields": {
+      "nome": "Redes de Computadores",
+      "sigla": "ULHT260-1793",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "Após a conclusão desta UC, os estudantes serão capazes de:\n\n1. Compreender a arquitetura da Internet e o modelo de camadas protocolar\n\n2. Analisar o funcionamento de protocolos aplicacionais (HTTP, SMTP, DNS)\n\n3. Distinguir os serviços de transporte UDP e TCP, incluindo mecanismos de controlo de fluxo e congestão\n\n4. Configurar endereços IP, sub-redes, e compreender encaminhamento e NAT\n\n5. Explicar protocolos de encaminhamento (RIP, OSPF, BGP)\n\n6. Analisar protocolos de nível de ligação, inclui",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 53,
+    "fields": {
+      "nome": "Sistemas de Suporte à Decisão",
+      "sigla": "ULHT260-7303",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 6,
+      "descricao": "\n\tEntender por que as empresas precisam de um ambiente de BI\n\tQuais componentes da arquitetura existem para BI\n\tEsquemas de modelação para DW\n\tConhecer os vários processos de manipulação de dados em ambientes DW\n\tO que um colaborador/utilizador pode obter em interfaces de relatórios\n\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 54,
+    "fields": {
+      "nome": "Trabalho Final de Curso",
+      "sigla": "ULHT260-5140",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 20,
+      "descricao": "O principal objectivo desta unidade curricular é de integrar os conceitos que foram adquiridos pelo aluno ao longo do curso, num projecto de âmbito alargado e onde o aluno autonomamente resolva um problema.\n\nEste objectivo geral pode ser concretizado por:\n\nOA1. Saber aplicar os princípios e técnicas associadas à conceção e implementação de casos reais ou simulados.\n\nOA2. Saber aplicar os conhecimentos obtidos nas unidades curriculares do curso face a problemas ligados às mesmas, bem como a aplic",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 55,
+    "fields": {
+      "nome": "Computação Distribuída",
+      "sigla": "ULHT260-7348",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 5,
+      "descricao": "No final da unidade curricular, os estudantes deverão conhecer os conceitos fundamentais e os principais desafios da computação distribuída, com foco em desempenho, fiabilidade, resiliência e segurança. Serão capazes de aplicar técnicas de design e boas práticas para modelar soluções distribuídas adequadas a diferentes contextos, desenvolver microsserviços com comunicação síncrona e assíncrona, integrar persistência de dados e mecanismos de coordenação entre serviços. Além disso, terão oportunid",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 56,
+    "fields": {
+      "nome": "Data Science",
+      "sigla": "ULHT260-22513",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 5,
+      "descricao": "\n\tCaracterizar tipos e estruturas de dados em conjuntos tabulares\n\tCalcular e interpretar estatísticas descritivas\n\tCriar e interpretar visualizações univariadas e bivariadas\n\tRealizar uma análise exploratória de dados estruturada e comunicar conclusões\n\tConstruir e avaliar modelos de base, incluindo regressão linear e logística\n\tAplicar métodos não supervisionados como k-means para agrupamento\n\tSelecionar e interpretar métricas de avaliação, compreendendo o compromisso viés–variância\n\tRelaciona",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 57,
+    "fields": {
+      "nome": "Engenharia de Software",
+      "sigla": "ULHT260-7341",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 5,
+      "descricao": "OA1. Compreender os métodos, técnicas e ferramentas para o completo desenvolvimento de um sistema de software, desde a sua conceção até à sua entrega e manutenção.\n\nOA2. Saber planear, gerir, avaliar e garantir a qualidade do desenvolvimento de projetos de software utilizando os princípios da Engenharia de Software.\n\n \n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 58,
+    "fields": {
+      "nome": "Interação Humano-Máquina",
+      "sigla": "ULHT260-11047",
+      "ano": 1,
+      "semestre": 1,
+      "ects": 5,
+      "descricao": "\n\t\n\tAdquirir competências em Desenho de Interação e Desenho Inclusivo.\n\t\n\t\n\tCompreender como a perceção humana e funções cognitivas influenciam a interação entre o humano e o computador. Compreender que a diferentes interações correspondem diferentes interfaces utilizador.\n\t\n\t\n\tCompreender o impacto dos públicos heterogéneos e dos fatores culturais no desenho de aplicações\n\t\n\t\n\tAprender metodologias de projeto que facilitem o desenho de experiências satisfatórias para o utilizador;\n\t\n\t\n\tCriar pr",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 59,
+    "fields": {
+      "nome": "Computação Móvel",
+      "sigla": "ULHT260-16925",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais da computação móvel. O aluno deverá ser capaz de perceber como tirar o máximo partido das vantagens da computação móvel (localização, sensores, contextual), quando aplicados à resolução de problema concretos. O aluno deverá estar sensibilizado para os constrangimentos típicos de uma aplicação móvel (autonomia, conectividade, usabilidade) e conhecer os mecanismos que permitem ultrapassar esses constrangimentos.\n\nConcretam",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 60,
+    "fields": {
+      "nome": "Inteligência Artificial",
+      "sigla": "ULHT260-2129",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "Os objectivos de aprendizagem desta cadeira incluem (1) Entendimento profundo dos aspectos conceituais que dão origem à IA, nomeadamente a formalização do conceito de computação universal via manipulação de símbolos, e a computação baseada em redes de neurónios; (2) os métodos e representações usados para estudar o funcionamento de qualquer máquina; (3) Desenho e implementação de agentes racionais e o conceito de \"processamento de informação\"; (4) Algoritmos clássicos de busca não informada: Bri",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 61,
+    "fields": {
+      "nome": "Segurança Informática",
+      "sigla": "ULHT260-11194",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "No final da cadeira, os estudantes deverão: Identificar os diferentes domínios e aplicações da segurança informática. Perceber e utilizar os principais algoritmos de encriptação, assim como quantificar os níveis de segurança que permitem assegurar. Conhecer e perceber as actuais ameaças à segurança em redes de dados e as boas práticas necessárias para as evitar. Conceber e implementar aplicações em rede obedecendo a elevados requisitos de segurança mesmo utilizando canais de comunicação inseguro",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.unidadecurricular",
+    "pk": 62,
+    "fields": {
+      "nome": "Sistemas de Informação na Nuvem",
+      "sigla": "ULHT260-22514",
+      "ano": 1,
+      "semestre": 2,
+      "ects": 5,
+      "descricao": "\n\tEntenda por que as empresas estão migrando para serviços em nuvem para apoiar seus negócios\n\tQuais são os modelos de negócios\n\tQuais são os principais provedores de serviços\n\tPrincipais conceitos da arquitetura em nuvem\n\tRecursos práticos para criar e implantar um serviço em nuvem\n\n",
+      "imagem": "",
+      "licenciatura": 1,
+      "docentes": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 1,
+    "fields": {
+      "nome": "Sistema de Gestão de Vídeos (deisIMDB)",
+      "descricao": "Projeto cumulativo dividido em fases para recriar um \"deisIMDB\" utilizando bases de dados relacionais para gestão de filmes, atores, realizadores e avaliações.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "",
+      "conceitos_aplicados": "Modelação conceptual e lógica (E-R, 3FN), scripts DDL, constraints, triggers de auditoria, stored procedures, funções, views, CRUD em Java",
+      "competencias_adquiridas": "Desenho avançado de arquiteturas relacionais, SQL avançado, integridade de dados via triggers e integração de bases de dados com frontend Java",
+      "colaboradores": "",
+      "unidade_curricular": 44,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 2,
+    "fields": {
+      "nome": "Jogo de Tempo de Reação",
+      "descricao": "Jogo focado no tempo de reação do utilizador, desenvolvido em hardware com Arduino UNO. Inclui 3 níveis de dificuldade, feedback sonoro e visual e gestão de High Score em display LCD.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "",
+      "conceitos_aplicados": "Sistema com LED aleatório, botões de resposta, três níveis de dificuldade (Fácil, Médio, Hardcore), buzzer, display LCD 16x2, gestão de High Score",
+      "competencias_adquiridas": "Modelação de sistemas embebidos, eletrónica básica, gestão de inputs e tempos",
+      "colaboradores": "Francisco Graça",
+      "unidade_curricular": 43,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 3,
+    "fields": {
+      "nome": "The Great Programming Journey",
+      "descricao": "Jogo gráfico de tabuleiro em duas partes integrado com visualizador .jar. Parte 1 sem herança/interfaces, Parte 2 com herança, polimorfismo, guardar/carregar jogo e testes unitários.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "",
+      "conceitos_aplicados": "POO (encapsulamento, herança, polimorfismo), GameManager, tipos de Abismos e Ferramentas, guardar/carregar estado do jogo, JUnit 5, code coverage",
+      "competencias_adquiridas": "Padrões de desenho OOP, testes unitários automáticos, versionamento com Git",
+      "colaboradores": "",
+      "unidade_curricular": 46,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 4,
+    "fields": {
+      "nome": "Portfólio Pessoal (HTML/CSS/JS)",
+      "descricao": "Portfólio pessoal alojado no GitHub Pages, focado na interface do utilizador do lado do cliente com design responsivo e comportamento dinâmico.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "https://goncalooliveira03.github.io",
+      "conceitos_aplicados": "Estrutura semântica HTML5, layouts CSS3, responsividade, JavaScript vanilla para interação dinâmica, hosting estático",
+      "competencias_adquiridas": "Desenvolvimento front-end vanilla, design responsivo, gestão de hosting no GitHub Pages",
+      "colaboradores": "",
+      "unidade_curricular": 45,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 5,
+    "fields": {
+      "nome": "Aplicação Full-Stack (React + Node.js)",
+      "descricao": "Ambiente de desenvolvimento para solidificação de conceitos contemporâneos da web, com arquitetura cliente/servidor separada.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "",
+      "conceitos_aplicados": "Arquitetura baseada em componentes React, gestão de estados e hooks, backend Node.js, comunicação assíncrona cliente-servidor",
+      "competencias_adquiridas": "Desenvolvimento Full-Stack, separação Front-end/API, Single Page Applications, comunicação assíncrona",
+      "colaboradores": "",
+      "unidade_curricular": 45,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "portfolio.projeto",
+    "pk": 6,
+    "fields": {
+      "nome": "Sistema de Processamento de Imagem (Receitas)",
+      "descricao": "Aplicação para interpretação e processamento de informação visual, com algoritmos de deteção, filtragem e segmentação de imagens.",
+      "ano": 2025,
+      "imagem": "",
+      "video_url": "",
+      "repositorio_github": "",
+      "link_deploy": "",
+      "conceitos_aplicados": "Algoritmos de processamento de imagem, filtros, segmentação, manipulação de pixels",
+      "competencias_adquiridas": "Extração de features visuais, visão computacional, manipulação de arrays/matrizes de imagem",
+      "colaboradores": "Francisco Graça",
+      "unidade_curricular": 47,
+      "tecnologias": []
+    }
+  },
+  {
+    "model": "curso.professor",
+    "pk": 1,
+    "fields": {
+      "nome": "Lúcio Studer",
+      "email": "lucio.studer@ulusofona.pt"
+    }
+  },
+  {
+    "model": "curso.aluno",
+    "pk": 1,
+    "fields": {
+      "nome": "Gonçalo Oliveira",
+      "numero": "22407799"
+    }
+  },
+  {
+    "model": "curso.curso",
+    "pk": 1,
+    "fields": {
+      "nome": "Django",
+      "imagem": "cursos/django.png",
+      "professor": 1,
+      "alunos": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "curso.curso",
+    "pk": 2,
+    "fields": {
+      "nome": "Next",
+      "imagem": "cursos/next.png",
+      "professor": 1,
+      "alunos": [
+        1
+      ]
+    }
+  }
+]
