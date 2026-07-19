@@ -1,4 +1,1 @@
-Gonçalo Oliveira - a22407799
-
-username : admin
-password : admin
+﻿Goncalo Oliveira - a22407799
